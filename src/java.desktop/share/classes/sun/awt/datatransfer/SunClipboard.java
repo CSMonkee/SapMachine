@@ -360,7 +360,6 @@ public abstract class SunClipboard extends Clipboard
             try {
                 openClipboard(null);
                 currentFormats = getClipboardFormats();
-            } catch (final IllegalStateException ignored) {
             } finally {
                 closeClipboard();
             }

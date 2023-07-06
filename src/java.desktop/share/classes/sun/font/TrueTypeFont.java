@@ -138,7 +138,6 @@ public class TrueTypeFont extends FileFont {
                 if (channel != null) {
                     channel.close();
                 }
-            } catch (IOException e) {
             } finally {
                 channel = null;
             }

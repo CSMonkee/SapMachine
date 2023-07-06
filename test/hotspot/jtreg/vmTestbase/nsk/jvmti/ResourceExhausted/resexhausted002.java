@@ -58,7 +58,6 @@ public class resexhausted002 {
             System.out.println("Can't reproduce OOME due to a limit on iterations/execution time. Test was useless.");
             throw new SkippedException("Test did not get an OutOfMemory error");
 
-        } catch (OutOfMemoryError e) {
         } finally {
             stress.finish();
         }

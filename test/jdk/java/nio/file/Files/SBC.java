@@ -236,7 +236,6 @@ public class SBC {
             try {
                 Files.newByteChannel(link, READ, LinkOption.NOFOLLOW_LINKS);
                 throw new RuntimeException();
-            } catch (IOException | UnsupportedOperationException x) {
             } finally {
                 TestUtil.deleteUnchecked(link);
             }

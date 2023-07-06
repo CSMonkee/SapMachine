@@ -86,7 +86,6 @@ public class PrintParenString extends Frame implements ActionListener {
        pj.setPrintable(c);
        try {
             pj.print();
-      } catch (PrinterException pe) {
       } finally {
          System.err.println("PRINT RETURNED");
       }

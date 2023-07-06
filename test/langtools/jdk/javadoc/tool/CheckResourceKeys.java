@@ -274,7 +274,6 @@ public class CheckResourceKeys {
                         results.add(v);
                 }
             }
-        } catch (ConstantPoolException ignore) {
         } finally {
             in.close();
         }

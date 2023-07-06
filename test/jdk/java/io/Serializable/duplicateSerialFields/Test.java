@@ -88,7 +88,6 @@ public class Test {
             oin.readObject();
             throw new Error(
                 "read of A should fail with InvalidClassException");
-        } catch (InvalidClassException e) {
         } finally {
             in.close();
         }
@@ -99,7 +98,6 @@ public class Test {
             oin.readObject();
             throw new Error(
                 "read of B should fail with InvalidClassException");
-        } catch (InvalidClassException e) {
         } finally {
             in.close();
         }

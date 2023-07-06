@@ -286,7 +286,6 @@ public class FileCacheImageInputStream extends ImageInputStreamImpl {
             if (cache != null) {
                 try {
                     cache.close();
-                } catch (IOException e) {
                 } finally {
                     cache = null;
                 }

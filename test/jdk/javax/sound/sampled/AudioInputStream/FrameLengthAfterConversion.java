@@ -166,8 +166,6 @@ public final class FrameLengthAfterConversion {
             final long frameLength = ais.getFrameLength();
             ais.close();
             validate(frameLength);
-        } catch (IllegalArgumentException | UnsupportedAudioFileException
-                ignored) {
         } finally {
             Files.delete(Paths.get(temp.getAbsolutePath()));
         }

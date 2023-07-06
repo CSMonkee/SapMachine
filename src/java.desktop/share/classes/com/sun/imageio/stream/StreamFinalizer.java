@@ -64,7 +64,6 @@ public class StreamFinalizer {
     protected void finalize() throws Throwable {
         try {
             stream.close();
-        } catch (IOException e) {
         } finally {
             stream = null;
             super.finalize();

@@ -156,7 +156,6 @@ public class ProxyTest {
                     client = server.accept();
                     (new HttpProxyHandler(client)).start();
                 }
-            } catch (Exception e) {
             } finally {
                 try { server.close(); } catch (IOException unused) {}
             }

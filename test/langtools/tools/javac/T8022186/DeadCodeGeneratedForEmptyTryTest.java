@@ -217,7 +217,7 @@ public class DeadCodeGeneratedForEmptyTryTest {
         void methodToLookFor() {
             try {
                 // empty try statement
-                try { } catch (Exception e) { } finally { }
+                try { } finally { }
             } catch (Exception e) {
                 System.out.println("EXCEPTION");
             } finally {
@@ -241,7 +241,7 @@ public class DeadCodeGeneratedForEmptyTryTest {
         void methodToLookFor() {
             try {
                 // empty try statement with skip statement
-                try { ; } catch (Exception e) { } finally { }
+                try { ; } finally { }
             } catch (Exception e) {
                 System.out.println("EXCEPTION");
             } finally {

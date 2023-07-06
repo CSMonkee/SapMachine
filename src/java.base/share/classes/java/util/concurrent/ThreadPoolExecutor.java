@@ -805,7 +805,6 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
                 if (!t.isInterrupted() && w.tryLock()) {
                     try {
                         t.interrupt();
-                    } catch (SecurityException ignore) {
                     } finally {
                         w.unlock();
                     }

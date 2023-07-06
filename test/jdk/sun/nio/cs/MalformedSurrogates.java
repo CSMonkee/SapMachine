@@ -75,7 +75,6 @@ public class MalformedSurrogates {
         try {
             en.encode(CharBuffer.wrap(surrogate));
             throw new RuntimeException("Should throw MalformedInputException or UnmappableCharacterException");
-        } catch (MalformedInputException | UnmappableCharacterException ex) {
         } finally {
             en.reset();
         }
@@ -91,7 +90,6 @@ public class MalformedSurrogates {
         CharsetEncoder en = cs.newEncoder();
         try {
             en.encode(CharBuffer.wrap(surrogate));
-        } catch (UnmappableCharacterException ex) {
         } finally {
             en.reset();
         }

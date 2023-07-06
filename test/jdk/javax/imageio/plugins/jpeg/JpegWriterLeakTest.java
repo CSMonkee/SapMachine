@@ -71,7 +71,6 @@ public class JpegWriterLeakTest {
 
 
                 // NB: dispose() or reset() workarounds the problem.
-            } catch (IOException e) {
             } finally {
                 writer = null;
             }

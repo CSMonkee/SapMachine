@@ -197,7 +197,6 @@ public class UnixPrintJob implements CancelablePrintJob {
         if (instream != null) {
             try {
                 instream.close();
-            } catch (IOException e) {
             } finally {
                 instream = null;
             }
@@ -205,7 +204,6 @@ public class UnixPrintJob implements CancelablePrintJob {
         else if (reader != null) {
             try {
                 reader.close();
-            } catch (IOException e) {
             } finally {
                 reader = null;
             }

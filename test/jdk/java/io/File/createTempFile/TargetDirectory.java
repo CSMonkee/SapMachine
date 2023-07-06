@@ -80,7 +80,6 @@ public class TargetDirectory {
         try {
             File.createTempFile("readonly", null, target);
             throw new RuntimeException("Exception not thrown for read-only target directory");
-        } catch (IOException expected) {
         } finally {
             target.delete();
         }
@@ -97,7 +96,6 @@ public class TargetDirectory {
         try {
             File.createTempFile("file", null, target);
             throw new RuntimeException("Exception not thrown for file target");
-        } catch (IOException expected) {
         } finally {
             target.delete();
         }

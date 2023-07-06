@@ -3725,7 +3725,6 @@ public abstract class JTextComponent extends JComponent implements Scrollable, A
                      (Rectangle)bounds : bounds.getBounds();
 
                 }
-            } catch (BadLocationException e) {
             } finally {
                 if (model instanceof AbstractDocument) {
                     ((AbstractDocument)model).readUnlock();

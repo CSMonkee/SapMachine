@@ -133,7 +133,6 @@ public class EchoService {
         public void run() {
             try {
                 doIt(sc, -1, -1);
-            } catch (IOException x) {
             } finally {
                 synchronized (lock) {
                     count--;

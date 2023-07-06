@@ -55,7 +55,6 @@ public class MultimonDeadlockTest {
                 }
             });
             Thread.sleep(5000);
-        } catch (InterruptedException | InvocationTargetException ex) {
         } finally {
             for (int i = 0; i < devices.length; i++) {
                 devices[i].setFullScreenWindow(null);

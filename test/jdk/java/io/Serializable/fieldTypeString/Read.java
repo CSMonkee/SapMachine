@@ -65,7 +65,6 @@ public class Read {
             ObjectInputStream oin = new ObjectInputStream(in);
             oin.readObject();
             throw new Error();
-        } catch (InvalidClassException ex) {
         } finally {
             in.close();
         }

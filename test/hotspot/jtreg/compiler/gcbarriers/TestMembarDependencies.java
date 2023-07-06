@@ -72,8 +72,6 @@ public class TestMembarDependencies {
             // Method call defines memory state that is then
             // used by subsequent instructions/blocks (see below).
             test_m1();
-        } catch (Exception e) {
-
         } finally {
             // Oop write to field emits a GC post-barrier with a MembarVolatile
             // which has a wide memory effect (kills all memory). This creates an

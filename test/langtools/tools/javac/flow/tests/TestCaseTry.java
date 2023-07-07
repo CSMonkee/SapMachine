@@ -24,9 +24,7 @@ public class TestCaseTry {
         try {
             o = "";
             o.hashCode();
-        } catch (RuntimeException e) {
-        }
-        finally {
+        } finally {
             o = "finally";
             o.hashCode();
         }

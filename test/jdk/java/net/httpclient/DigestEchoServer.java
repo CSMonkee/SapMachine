@@ -1655,8 +1655,7 @@ public abstract class DigestEchoServer implements HttpServerAdapters {
                     end.whenComplete(
                             (r,t) -> {
                                 try { toClose.close(); } catch (IOException x) { }
-                                try { tc.close(); } catch (IOException x) { }
-                                finally {connectionCFs.remove(end);}
+                                try { tc.close(); } finally {connectionCFs.remove(end);}
                             });
                     connectionCFs.add(end);
                     targetConnection = clientConnection = null;

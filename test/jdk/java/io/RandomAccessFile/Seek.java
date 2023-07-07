@@ -43,7 +43,6 @@ public class Seek
             raf.seek(-10);
             throw new Exception
                 ("Should have thrown an IOException when seek offset is < 0");
-        } catch (IOException e) {
         } finally {
             raf.close();
         }

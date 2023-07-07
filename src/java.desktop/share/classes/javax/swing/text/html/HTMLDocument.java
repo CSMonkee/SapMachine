@@ -2697,10 +2697,7 @@ public class HTMLDocument extends DefaultStyledDocument {
                                                this, event));
                     }
                 }
-            }
-            catch (BadLocationException ble) {
-            }
-            finally {
+            } finally {
                 releaseLock();
             }
         }

@@ -177,7 +177,6 @@ public class Win32PrintJob implements CancelablePrintJob {
         if (instream != null) {
             try {
                 instream.close();
-            } catch (IOException e) {
             } finally {
                 instream = null;
             }
@@ -185,7 +184,6 @@ public class Win32PrintJob implements CancelablePrintJob {
         else if (reader != null) {
             try {
                 reader.close();
-            } catch (IOException e) {
             } finally {
                 reader = null;
             }

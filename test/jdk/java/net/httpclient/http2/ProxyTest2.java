@@ -309,8 +309,7 @@ public class ProxyTest2 {
                     end = CompletableFuture.allOf(end1, end2);
                     end.whenComplete(
                             (r,t) -> {
-                                try { toClose.close(); } catch (IOException x) { }
-                                finally {connectionCFs.remove(end);}
+                                try { toClose.close(); } finally {connectionCFs.remove(end);}
                             });
                     connectionCFs.add(end);
                     t1.start();

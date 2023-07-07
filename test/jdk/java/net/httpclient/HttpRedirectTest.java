@@ -323,13 +323,11 @@ public class HttpRedirectTest implements HttpServerAdapters {
         client = null;
         try {
             executor.awaitTermination(2000, TimeUnit.MILLISECONDS);
-        } catch (Throwable x) {
         } finally {
             executor.shutdownNow();
         }
         try {
             clientexec.awaitTermination(2000, TimeUnit.MILLISECONDS);
-        } catch (Throwable x) {
         } finally {
             clientexec.shutdownNow();
         }

@@ -1068,7 +1068,6 @@ public sealed class InetAddress implements Serializable permits Inet4Address, In
                     inetAddresses = getAddressesFromNameService(host);
                     // don't update the "expirySet", will do that later
                     staleTime = refreshTime + InetAddressCachePolicy.getStale() * 1000_000_000L;
-                } catch (UnknownHostException ignore) {
                 } finally {
                     lookupLock.unlock();
                 }

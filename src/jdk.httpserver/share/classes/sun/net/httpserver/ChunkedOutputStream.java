@@ -147,8 +147,6 @@ class ChunkedOutputStream extends FilterOutputStream
                 is.close();
             }
         /* some clients close the connection before empty chunk is sent */
-        } catch (IOException e) {
-
         } finally {
             closed = true;
         }

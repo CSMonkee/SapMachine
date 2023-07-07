@@ -1451,7 +1451,6 @@ public class JSR166TestCase extends TestCase {
                 Policy.setPolicy(permissivePolicy());
                 System.setSecurityManager(new SecurityManager());
                 runWithSecurityManagerWithPermissions(r, permissions);
-            } catch (UnsupportedOperationException ok) {
             } finally {
                 try {
                     System.setSecurityManager(null);

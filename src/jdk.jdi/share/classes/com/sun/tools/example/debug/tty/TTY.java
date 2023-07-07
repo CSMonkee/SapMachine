@@ -742,7 +742,6 @@ public class TTY implements EventNotifier {
                     }
                 }
             }
-        } catch (IOException e) {
         } finally {
             if (inFile != null) {
                 try {

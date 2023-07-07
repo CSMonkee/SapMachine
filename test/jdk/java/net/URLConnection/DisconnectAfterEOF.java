@@ -173,7 +173,6 @@ public class DisconnectAfterEOF {
                    }
                 }
 
-            } catch (IOException ioe) {
             } finally {
                 try {
                     s.close();

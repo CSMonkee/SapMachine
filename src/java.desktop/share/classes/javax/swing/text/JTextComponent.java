@@ -2844,7 +2844,6 @@ public abstract class JTextComponent extends JComponent implements Scrollable, A
                      (Rectangle)bounds : bounds.getBounds();
 
                 }
-            } catch (BadLocationException e) {
             } finally {
                 if (model instanceof AbstractDocument) {
                     ((AbstractDocument)model).readUnlock();
@@ -3042,7 +3041,6 @@ public abstract class JTextComponent extends JComponent implements Scrollable, A
                 default:
                     break;
                 }
-            } catch (BadLocationException e) {
             } finally {
                 if (model instanceof AbstractDocument) {
                     ((AbstractDocument)model).readUnlock();
@@ -3365,9 +3363,6 @@ public abstract class JTextComponent extends JComponent implements Scrollable, A
                             model.getText(index + direction, 1));
                     }
 
-                } catch (BadLocationException e) {
-                    // we are intentionally silent; our contract says we return
-                    // null if there is any failure in this method
                 } finally {
                     if (model instanceof AbstractDocument) {
                         ((AbstractDocument)model).readUnlock();
@@ -3725,7 +3720,6 @@ public abstract class JTextComponent extends JComponent implements Scrollable, A
                      (Rectangle)bounds : bounds.getBounds();
 
                 }
-            } catch (BadLocationException e) {
             } finally {
                 if (model instanceof AbstractDocument) {
                     ((AbstractDocument)model).readUnlock();

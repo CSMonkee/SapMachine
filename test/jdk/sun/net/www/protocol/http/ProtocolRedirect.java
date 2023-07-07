@@ -89,7 +89,6 @@ class Redirect implements Runnable, Closeable {
         stopped = true;
         try {
             if (s != null) s.close();
-        } catch (Throwable x) {
         } finally {
             try { ssock.close(); } catch (Throwable x) {}
         }

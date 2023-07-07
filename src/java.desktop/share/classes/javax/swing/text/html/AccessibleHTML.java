@@ -1061,7 +1061,6 @@ class AccessibleHTML implements Accessible {
                     default:
                         break;
                     }
-                } catch (BadLocationException e) {
                 } finally {
                     if (model instanceof AbstractDocument) {
                         ((AbstractDocument)model).readUnlock();

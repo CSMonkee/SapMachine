@@ -347,7 +347,6 @@ public class InitialContextTest {
         } finally {
             try {
                 src.close();
-            } catch (IOException ignored1) {
             } finally {
                 try {
                     dst.close();

@@ -45,7 +45,6 @@ public class CloseableDisposerRecord implements DisposerRecord {
         if (closeable != null) {
             try {
                 closeable.close();
-            } catch (IOException e) {
             } finally {
                 closeable = null;
             }

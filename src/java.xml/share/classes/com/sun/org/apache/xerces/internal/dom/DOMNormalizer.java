@@ -719,11 +719,7 @@ public class DOMNormalizer implements XMLDocumentHandler {
             loader.setErrorHandler(fConfiguration.getErrorHandler());
             loader.loadGrammarWithContext((XMLDTDValidator) fValidationHandler, rootName,
                     publicId, systemId, baseSystemId, internalSubset);
-        }
-        // REVISIT: Should probably report this exception to the error handler.
-        catch (IOException e) {
-        }
-        finally {
+        } finally {
             if (loader != null) {
                 CoreDOMImplementationImpl.singleton.releaseDTDLoader(xmlVersion, loader);
             }

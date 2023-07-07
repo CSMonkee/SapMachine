@@ -43,7 +43,6 @@ public class PrintBadImage implements Printable {
           pj.setPrintable(pbi);
           try {
                pj.print();
-         } catch (PrinterException pe) {
          } finally {
             System.err.println("PRINT RETURNED");
          }

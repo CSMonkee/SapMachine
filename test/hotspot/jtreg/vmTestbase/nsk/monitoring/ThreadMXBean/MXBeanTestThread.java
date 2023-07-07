@@ -173,7 +173,6 @@ public class MXBeanTestThread extends Thread {
                     allocatedList = new ArrayList<Object>();
                 }
             }
-        } catch (OutOfMemoryError e) {
         } finally {
             stressAllocatedBytes += actuallyAllocated;
         }

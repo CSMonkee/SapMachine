@@ -78,7 +78,6 @@ public class PrintVolatileImage extends Component
            pj.setPrintable(this);
            try {
                pj.print();
-           } catch (PrinterException pe) {
            } finally {
                System.err.println("PRINT RETURNED");
            }

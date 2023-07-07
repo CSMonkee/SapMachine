@@ -336,7 +336,6 @@ public class Transfer {
         try {
             fc2.transferFrom(fc1, 0L, 0);
             throw new RuntimeException("NonReadableChannelException expected");
-        } catch (NonReadableChannelException expected) {
         } finally {
             fc1.close();
             fc2.close();

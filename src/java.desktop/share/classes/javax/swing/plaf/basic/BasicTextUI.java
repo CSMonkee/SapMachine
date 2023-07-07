@@ -1256,7 +1256,6 @@ public abstract class BasicTextUI extends TextUI implements ViewFactory {
                     Rectangle rect = (toDamage instanceof Rectangle) ?
                             (Rectangle)toDamage : toDamage.getBounds();
                     editor.repaint(rect.x, rect.y, rect.width, rect.height);
-                } catch (BadLocationException e) {
                 } finally {
                     if (doc instanceof AbstractDocument) {
                         ((AbstractDocument)doc).readUnlock();

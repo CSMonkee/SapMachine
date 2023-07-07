@@ -781,7 +781,6 @@ public class TCPEndpoint implements Endpoint {
 
             try {
                 name = InetAddress.getByName(hostAddress).getHostName();
-            } catch (java.net.UnknownHostException e) {
             } finally {
                 synchronized(this) {
                     reverseLookup = name;

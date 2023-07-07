@@ -97,8 +97,6 @@ public class HttpCapture {
                     }
                     line = in.readLine();
                 }
-            } catch (IOException ioe) {
-
             } finally {
                 try {
                     in.close();

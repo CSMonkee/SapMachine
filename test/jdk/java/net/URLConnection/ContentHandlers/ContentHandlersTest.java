@@ -348,7 +348,6 @@ public class ContentHandlersTest {
         } finally {
             try {
                 src.close();
-            } catch (IOException ignored1) {
             } finally {
                 try {
                     dst.close();

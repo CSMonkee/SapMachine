@@ -1235,7 +1235,6 @@ final class HttpClientImpl extends HttpClient implements Trackable {
                 } finally {
                     lock.unlock();
                 }
-            } catch (IOException ignored) {
             } finally {
                 owner.stop();
             }

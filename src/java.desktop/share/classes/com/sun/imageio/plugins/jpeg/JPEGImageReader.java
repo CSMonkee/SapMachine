@@ -415,7 +415,6 @@ public class JPEGImageReader extends ImageReader {
         try {
             gotoImage(imageIndex);
             skipImage();
-        } catch (IOException | IndexOutOfBoundsException e) {
         } finally {
             cbLock.unlock();
         }

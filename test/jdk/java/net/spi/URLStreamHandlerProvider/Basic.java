@@ -310,7 +310,6 @@ public class Basic {
         } finally {
             try {
                 src.close();
-            } catch (IOException ignored1) {
             } finally {
                 try {
                     dst.close();
